@@ -1,0 +1,187 @@
+C:\Users\clavoie>cd landingpage
+
+C:\Users\clavoie\landingpage>dir
+ Le volume dans le lecteur C s’appelle OS
+ Le numéro de série du volume est 4E0D-F2F2
+
+ Répertoire de C:\Users\clavoie\landingpage
+
+2023-02-17  17:15    <DIR>          .
+2023-02-17  17:15    <DIR>          ..
+               0 fichier(s)                0 octets
+               2 Rép(s)  364 748 148 736 octets libres
+
+C:\Users\clavoie\landingpage>git init
+Initialized empty Git repository in C:/Users/clavoie/landingpage/.git/
+
+C:\Users\clavoie\landingpage>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\clavoie\landingpage>edit
+'edit' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\clavoie\landingpage>git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\clavoie\landingpage>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\clavoie\landingpage>git add index.html
+
+C:\Users\clavoie\landingpage>git commit -m "projet initial"
+[master (root-commit) dbf4c33] projet initial
+ 1 file changed, 15 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\clavoie\landingpage>git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\clavoie\landingpage>git add index.html
+
+C:\Users\clavoie\landingpage>git commit -m "Modification"
+[master 2c9ff08] Modification
+ 1 file changed, 4 insertions(+)
+
+C:\Users\clavoie\landingpage>git log
+commit 2c9ff08afc05a094cb189978d2272a15e3b30561 (HEAD -> master)
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:17:39 2023 -0500
+
+    Modification
+
+commit dbf4c338301d00e322b53abc426a422c2434d56d
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:12:47 2023 -0500
+
+    projet initial
+
+C:\Users\clavoie\landingpage>git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\clavoie\landingpage>git add index.html
+
+C:\Users\clavoie\landingpage>git commit -m "Modification finale"
+[master 79df77b] Modification finale
+ 1 file changed, 3 insertions(+)
+
+C:\Users\clavoie\landingpage>git log
+commit 79df77b09330dfbd3fccc5c9cc28eea682fb7e7b (HEAD -> master)
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:22:01 2023 -0500
+
+    Modification finale
+
+commit 2c9ff08afc05a094cb189978d2272a15e3b30561
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:17:39 2023 -0500
+
+    Modification
+
+commit dbf4c338301d00e322b53abc426a422c2434d56d
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:12:47 2023 -0500
+
+    projet initial
+
+C:\Users\clavoie\landingpage>git branch backgroundcolor
+
+C:\Users\clavoie\landingpage>git branch
+  backgroundcolor
+* master
+
+C:\Users\clavoie\landingpage>git checkout backgroundcolor
+Switched to branch 'backgroundcolor'
+
+C:\Users\clavoie\landingpage>git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\clavoie\landingpage>git add index.html
+
+C:\Users\clavoie\landingpage>git commit -m "commentaires"
+[backgroundcolor f734916] commentaires
+ 1 file changed, 4 insertions(+)
+
+C:\Users\clavoie\landingpage>git log
+commit f73491676b94e0c1203f959bf3d9b72e3b301163 (HEAD -> backgroundcolor)
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:29:34 2023 -0500
+
+    commentaires
+
+commit 79df77b09330dfbd3fccc5c9cc28eea682fb7e7b (master)
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:22:01 2023 -0500
+
+    Modification finale
+
+commit 2c9ff08afc05a094cb189978d2272a15e3b30561
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:17:39 2023 -0500
+
+    Modification
+
+commit dbf4c338301d00e322b53abc426a422c2434d56d
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:12:47 2023 -0500
+
+    projet initial
+
+C:\Users\clavoie\landingpage>git checkout master
+Switched to branch 'master'
+
+C:\Users\clavoie\landingpage>git merge backgroundcolor
+Updating 79df77b..f734916
+Fast-forward
+ index.html | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+C:\Users\clavoie\landingpage>git checkout master
+Already on 'master'
+
+C:\Users\clavoie\landingpage>git branch
+  backgroundcolor
+* master
+
+C:\Users\clavoie\landingpage>git branch -d backgroundcolor
+Deleted branch backgroundcolor (was f734916).
+
+C:\Users\clavoie\landingpage>git checkout master
+Already on 'master'
+
+C:\Users\clavoie\landingpage>git branch
+* master
+
+C:\Users\clavoie\landingpage>git log
+commit f73491676b94e0c1203f959bf3d9b72e3b301163 (HEAD -> master)
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:29:34 2023 -0500
+
+    commentaires
+
+commit 79df77b09330dfbd3fccc5c9cc28eea682fb7e7b
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:22:01 2023 -0500
+
+    Modification finale
+
+commit 2c9ff08afc05a094cb189978d2272a15e3b30561
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:17:39 2023 -0500
+
+    Modification
+
+commit dbf4c338301d00e322b53abc426a422c2434d56d
+Author: claudelavoie2011 <125591570+claudelavoie2011@users.noreply.github.com>
+Date:   Sat Feb 18 13:12:47 2023 -0500
+
+    projet initial
+
+C:\Users\clavoie\landingpage>
